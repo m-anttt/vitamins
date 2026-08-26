@@ -8,9 +8,24 @@
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- Шапка: смена темы при скролле ------------------------------ */
+  /* ---------- Смещение якорных ссылок под высоту шапки -------------------- */
+  /* Высота шапки не захардкожена в CSS: меряем её реально, иначе scroll-padding
+     мог разъезжаться с фактической высотой (шапка "проглатывала" заголовок
+     секции при переходе по ссылкам вида #catalog).                          */
 
   var header = document.getElementById('siteHeader');
+
+  if (header) {
+    var syncScrollOffset = function () {
+      document.documentElement.style.scrollPaddingTop = header.getBoundingClientRect().height + 'px';
+    };
+    syncScrollOffset();
+    window.addEventListener('resize', syncScrollOffset);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncScrollOffset);
+  }
+
+  /* ---------- Шапка: смена темы при скролле ------------------------------ */
+
   var hero = document.querySelector('.hero');
 
   if (header && hero) {

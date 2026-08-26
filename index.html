@@ -54,7 +54,9 @@
 
   <!-- ═══════════════ 01 · HERO ═══════════════ -->
   <section class="hero surface-dark" id="top">
-    <div class="media hero__media" data-slot="hero — видео или фото 16:9" style="--ar:16/9"></div>
+    <div class="media hero__media media--dark" style="--ar:16/9">
+      <img src="assets/img/hero-landscape.jpg" alt="Горное пастбище — фирменный образ ELEMENTA" loading="eager">
+    </div>
 
     <div class="hero__content container">
       <p class="label label--light">01 — Nutrition Lab · с 2019</p>
@@ -69,40 +71,28 @@
     </div>
   </section>
 
-  <!-- ═══════════════ 02 · SPLIT CATEGORIES ═══════════════ -->
-  <section class="split" aria-label="Ключевые категории">
+  <!-- ═══════════════ 02 · BRAND STORY ═══════════════ -->
+  <section class="story container" id="about">
 
-    <article class="split__panel">
-      <div class="media split__media" data-slot="категория 1 — 4:5" style="--ar:4/5"></div>
-      <div class="split__body">
-        <p class="badge">Веган</p>
-        <p class="badge badge--outline">Премиум-качество</p>
-        <h2 class="display display--l">Капсулы</h2>
-        <ul class="ticks">
-          <li>Биодоступные хелатные формы</li>
-          <li>Лабораторный контроль партий</li>
-          <li>Растительная оболочка</li>
-          <li>Произведено в Европе</li>
-        </ul>
-        <a class="link-cta" href="#catalog">Подробнее</a>
-      </div>
-    </article>
+    <div class="story__text">
+      <p class="label">02 — О бренде</p>
+      <p class="prose prose--lead">Мы начинали как небольшая лаборатория и до сих пор производим малыми партиями — не массой. Каждое сырьё приходит с сертификатом, каждая партия уходит в независимую проверку.</p>
+      <p class="prose">Лучшее качество берётся не откуда-то, а из конкретного места: собственное производство полного цикла, ручная сборка и точные технологии. Мы знаем путь каждой капсулы.</p>
+      <a class="link-cta" href="#journal">Больше о нас</a>
+    </div>
 
-    <article class="split__panel split__panel--dark surface-dark">
-      <div class="media split__media" data-slot="категория 2 — 4:5" style="--ar:4/5"></div>
-      <div class="split__body">
-        <p class="badge badge--light">Новое</p>
-        <p class="label label--light">Оптимально для&nbsp;— <span class="ticker" id="ticker" aria-live="off">иммунитета</span></p>
-        <h2 class="display display--l">Липосомы</h2>
-        <ul class="ticks ticks--light">
-          <li>Усвоение до 5 раз выше</li>
-          <li>Нейтральный вкус</li>
-          <li>Без сахара и подсластителей</li>
-          <li>Формула для ежедневного приёма</li>
-        </ul>
-        <a class="link-cta link-cta--light" href="#catalog">Подробнее</a>
+    <div class="story__media">
+      <div class="media" style="--ar:3/4">
+        <img src="assets/img/about-brand.jpg" alt="Капсулы и капли ELEMENTA, разложенные на тарелке рядом со столовыми приборами">
       </div>
-    </article>
+      <div class="media story__media--offset" data-slot="деталь — 1:1" style="--ar:1/1"></div>
+    </div>
+
+    <dl class="stats">
+      <div><dt class="label">Партий проверено</dt><dd class="display display--s" data-count="1240">0</dd></div>
+      <div><dt class="label">Активных формул</dt><dd class="display display--s" data-count="26">0</dd></div>
+      <div><dt class="label">Аптек-партнёров</dt><dd class="display display--s" data-count="310">0</dd></div>
+    </dl>
 
   </section>
 
@@ -119,27 +109,33 @@
   <section class="featured container" id="catalog">
     <header class="section-head">
       <h2 class="display display--m">Бестселлеры</h2>
-      <p class="label">02 — Каталог</p>
+      <p class="label">03 — Каталог</p>
     </header>
 
     <div class="cards cards--3">
 
       <article class="card">
-        <div class="media card__media" data-slot="продукт 1 — 1:1" style="--ar:1/1"></div>
+        <div class="media card__media" style="--ar:1/1">
+          <img src="assets/img/product-d3-k2.jpg" alt="ELEMENTA D3 + K2, капли 30 мл" loading="lazy">
+        </div>
         <h3 class="card__title">D3 + K2 <span>капли, 30 мл</span></h3>
         <p class="card__price">2 450 ₽</p>
         <button class="btn btn--dark btn--sm js-add" type="button">В корзину</button>
       </article>
 
       <article class="card">
-        <div class="media card__media" data-slot="продукт 2 — 1:1" style="--ar:1/1"></div>
+        <div class="media card__media" style="--ar:1/1">
+          <img src="assets/img/product-magnesium.jpeg" alt="ELEMENTA Магний бисглицинат, 120 капсул" loading="lazy">
+        </div>
         <h3 class="card__title">Магний бисглицинат <span>120 капсул</span></h3>
         <p class="card__price">1 890 ₽</p>
         <button class="btn btn--dark btn--sm js-add" type="button">В корзину</button>
       </article>
 
       <article class="card">
-        <div class="media card__media" data-slot="продукт 3 — 1:1" style="--ar:1/1"></div>
+        <div class="media card__media" style="--ar:1/1">
+          <img src="assets/img/product-omega3.jpg" alt="ELEMENTA Омега-3 ультра, 90 капсул" loading="lazy">
+        </div>
         <h3 class="card__title">Омега-3 <span>ультра, 90 капсул</span></h3>
         <p class="card__price">2 990 ₽</p>
         <button class="btn btn--dark btn--sm js-add" type="button">В корзину</button>
@@ -150,26 +146,44 @@
     <a class="link-cta link-cta--xl" href="#accordion">Весь каталог</a>
   </section>
 
-  <!-- ═══════════════ 05 · BRAND STORY ═══════════════ -->
-  <section class="story container" id="about">
+  <!-- ═══════════════ 05 · SPLIT CATEGORIES ═══════════════ -->
+  <section class="split" aria-label="Ключевые категории">
 
-    <div class="story__text">
-      <p class="label">03 — О бренде</p>
-      <p class="prose prose--lead">Мы начинали как небольшая лаборатория и до сих пор производим малыми партиями — не массой. Каждое сырьё приходит с сертификатом, каждая партия уходит в независимую проверку.</p>
-      <p class="prose">Лучшее качество берётся не откуда-то, а из конкретного места: собственное производство полного цикла, ручная сборка и точные технологии. Мы знаем путь каждой капсулы.</p>
-      <a class="link-cta" href="#journal">Больше о нас</a>
-    </div>
+    <article class="split__panel">
+      <div class="media split__media media--dark" style="--ar:4/5">
+        <img src="assets/img/category-capsules.jpg" alt="Макросъёмка капсул ELEMENTA">
+      </div>
+      <div class="split__body">
+        <p class="badge">Веган</p>
+        <p class="badge badge--outline">Премиум-качество</p>
+        <h2 class="display display--l">Капсулы</h2>
+        <ul class="ticks">
+          <li>Биодоступные хелатные формы</li>
+          <li>Лабораторный контроль партий</li>
+          <li>Растительная оболочка</li>
+          <li>Произведено в Европе</li>
+        </ul>
+        <a class="link-cta" href="#catalog">Подробнее</a>
+      </div>
+    </article>
 
-    <div class="story__media">
-      <div class="media" data-slot="о бренде — 3:4" style="--ar:3/4"></div>
-      <div class="media story__media--offset" data-slot="деталь — 1:1" style="--ar:1/1"></div>
-    </div>
-
-    <dl class="stats">
-      <div><dt class="label">Партий проверено</dt><dd class="display display--s" data-count="1240">0</dd></div>
-      <div><dt class="label">Активных формул</dt><dd class="display display--s" data-count="26">0</dd></div>
-      <div><dt class="label">Аптек-партнёров</dt><dd class="display display--s" data-count="310">0</dd></div>
-    </dl>
+    <article class="split__panel split__panel--dark surface-dark">
+      <div class="media split__media media--dark" style="--ar:4/5">
+        <img src="assets/img/category-liposomes.jpg" alt="Капля масла над пипеткой флакона ELEMENTA">
+      </div>
+      <div class="split__body">
+        <p class="badge badge--light">Новое</p>
+        <p class="label label--light">Оптимально для&nbsp;— <span class="ticker" id="ticker" aria-live="off">иммунитета</span></p>
+        <h2 class="display display--l">Липосомы</h2>
+        <ul class="ticks ticks--light">
+          <li>Усвоение до 5 раз выше</li>
+          <li>Нейтральный вкус</li>
+          <li>Без сахара и подсластителей</li>
+          <li>Формула для ежедневного приёма</li>
+        </ul>
+        <a class="link-cta link-cta--light" href="#catalog">Подробнее</a>
+      </div>
+    </article>
 
   </section>
 
@@ -190,17 +204,23 @@
             <p class="prose prose--light">Базовая поддержка в сезон и в перелётах. Витамин D, цинк и липосомальный C — формы, которые организм действительно усваивает.</p>
             <div class="cards cards--3">
               <article class="card card--dark">
-                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
-                <h3 class="card__title">Витамин C липосомальный <span>60 капсул</span></h3>
+                <div class="media card__media" style="--ar:1/1">
+                  <img src="assets/img/product-liposomes.jpg" alt="ELEMENTA Витамин C липосомальный, капли 30 мл" loading="lazy">
+                </div>
+                <h3 class="card__title">Витамин C липосомальный <span>капли, 30 мл</span></h3>
                 <p class="card__price">2 190 ₽</p>
               </article>
               <article class="card card--dark">
-                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <div class="media card__media" style="--ar:1/1">
+                  <img src="assets/img/product-zinc.jpg" alt="ELEMENTA Цинк пиколинат, 90 капсул" loading="lazy">
+                </div>
                 <h3 class="card__title">Цинк пиколинат <span>90 капсул</span></h3>
                 <p class="card__price">1 290 ₽</p>
               </article>
               <article class="card card--dark">
-                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <div class="media card__media" style="--ar:1/1">
+                  <img src="assets/img/product-d3-k2.jpg" alt="ELEMENTA D3 + K2, капли 30 мл" loading="lazy">
+                </div>
                 <h3 class="card__title">D3 + K2 <span>капли, 30 мл</span></h3>
                 <p class="card__price">2 450 ₽</p>
               </article>
@@ -223,17 +243,23 @@
             <p class="prose prose--light">Без стимуляторов и резких подъёмов. Витамины группы B, железо и адаптогены работают на ровный уровень энергии в течение дня.</p>
             <div class="cards cards--3">
               <article class="card card--dark">
-                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <div class="media card__media" style="--ar:1/1">
+                  <img src="assets/img/product-b-complex.jpg" alt="ELEMENTA B-комплекс, 60 капсул" loading="lazy">
+                </div>
                 <h3 class="card__title">B-комплекс <span>активные формы, 60 капсул</span></h3>
                 <p class="card__price">1 950 ₽</p>
               </article>
               <article class="card card--dark">
-                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <div class="media card__media" style="--ar:1/1">
+                  <img src="assets/img/product-iron-c.jpg" alt="ELEMENTA Железо + C, 90 капсул" loading="lazy">
+                </div>
                 <h3 class="card__title">Железо + C <span>90 капсул</span></h3>
                 <p class="card__price">1 490 ₽</p>
               </article>
               <article class="card card--dark">
-                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <div class="media card__media" style="--ar:1/1">
+                  <img src="assets/img/product-coq10.jpeg" alt="ELEMENTA Коэнзим Q10, 60 капсул" loading="lazy">
+                </div>
                 <h3 class="card__title">Коэнзим Q10 <span>60 капсул</span></h3>
                 <p class="card__price">3 250 ₽</p>
               </article>
@@ -256,17 +282,23 @@
             <p class="prose prose--light">Вечерний ритуал вместо снотворного. Магний в хелатной форме, L-теанин и глицин — мягко, без утренней тяжести.</p>
             <div class="cards cards--3">
               <article class="card card--dark">
-                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <div class="media card__media" style="--ar:1/1">
+                  <img src="assets/img/product-magnesium.jpeg" alt="ELEMENTA Магний бисглицинат, 120 капсул" loading="lazy">
+                </div>
                 <h3 class="card__title">Магний бисглицинат <span>120 капсул</span></h3>
                 <p class="card__price">1 890 ₽</p>
               </article>
               <article class="card card--dark">
-                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <div class="media card__media" style="--ar:1/1">
+                  <img src="assets/img/product-l-theanine.jpeg" alt="ELEMENTA L-теанин, 60 капсул" loading="lazy">
+                </div>
                 <h3 class="card__title">L-теанин <span>60 капсул</span></h3>
                 <p class="card__price">1 690 ₽</p>
               </article>
               <article class="card card--dark">
-                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <div class="media card__media" style="--ar:1/1">
+                  <img src="assets/img/product-night-formula.jpg" alt="ELEMENTA Ночная формула, саше" loading="lazy">
+                </div>
                 <h3 class="card__title">Ночная формула <span>30 саше</span></h3>
                 <p class="card__price">2 390 ₽</p>
               </article>
@@ -289,7 +321,9 @@
             <p class="prose prose--light">Коллаген, биотин и омега-кислоты. Результат виден не за неделю, а за курс — и мы честно об этом пишем на упаковке.</p>
             <div class="cards cards--3">
               <article class="card card--dark">
-                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <div class="media card__media" style="--ar:1/1">
+                  <img src="assets/img/product-collagen.jpg" alt="ELEMENTA Коллаген пептидный, саше" loading="lazy">
+                </div>
                 <h3 class="card__title">Коллаген пептидный <span>порошок, 300 г</span></h3>
                 <p class="card__price">3 690 ₽</p>
               </article>
@@ -299,7 +333,9 @@
                 <p class="card__price">1 390 ₽</p>
               </article>
               <article class="card card--dark">
-                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <div class="media card__media" style="--ar:1/1">
+                  <img src="assets/img/product-omega3.jpg" alt="ELEMENTA Омега-3 ультра, 90 капсул" loading="lazy">
+                </div>
                 <h3 class="card__title">Омега-3 <span>ультра, 90 капсул</span></h3>
                 <p class="card__price">2 990 ₽</p>
               </article>
@@ -382,7 +418,9 @@
     <div class="cards cards--3">
 
       <article class="post">
-        <div class="media post__media" data-slot="статья 1 — 3:2" style="--ar:3/2"></div>
+        <div class="media post__media" style="--ar:3/2">
+          <img src="assets/img/product-vitamin-c.jpeg" alt="ELEMENTA Витамин C — иллюстрация к статье о липосомальных формах" loading="lazy">
+        </div>
         <p class="label"><time datetime="2026-05-14">14 / 05 / 26</time></p>
         <h3 class="post__title">Липосомальные формы: маркетинг или химия?</h3>
         <p class="prose prose--sm">Разбираем, что происходит с молекулой в липидной оболочке и почему усвоение действительно меняется. Спойлер: не для всех витаминов.</p>
