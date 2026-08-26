@@ -1,0 +1,17 @@
+# ОС
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Редакторы
+.vscode/
+.idea/
+*.swp
+
+# Локальные настройки инструментов
+.claude/
+
+# Прочее
+node_modules/
+*.log

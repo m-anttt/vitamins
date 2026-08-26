@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ELEMENTA — Витамины и нутрицевтики</title>
+<meta name="description" content="ELEMENTA — витамины и нутрицевтики чистого состава. Лабораторный контроль каждой партии, биодоступные формы, производство полного цикла.">
+<meta name="theme-color" content="#F7F5EE">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="ELEMENTA — Витамины и нутрицевтики">
+<meta property="og:description" content="Чистый состав, биодоступные формы, лабораторный контроль каждой партии.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000'/><text y='.9em' x='50%25' text-anchor='middle' font-size='68' font-family='Helvetica,Arial' font-weight='bold' fill='%23F7F5EE'>E</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Literata:opsz,wght@7..72,300;7..72,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">К основному содержанию</a>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<header class="site-header" id="siteHeader" data-theme="dark">
+  <div class="site-header__inner">
+
+    <a class="logo" href="#top" aria-label="ELEMENTA — на главную">ELEMENTA</a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О бренде</a>
+      <a href="#formulas">Формулы</a>
+      <a href="#journal">Журнал</a>
+    </nav>
+
+    <div class="site-header__actions">
+      <a class="header-link" href="#newsletter">Подписка</a>
+      <a class="header-link header-link--cart" href="#catalog">
+        Корзина <span class="cart-count">0</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Меню">
+        <span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ═══════════════ 01 · HERO ═══════════════ -->
+  <section class="hero surface-dark" id="top">
+    <div class="media hero__media" data-slot="hero — видео или фото 16:9" style="--ar:16/9"></div>
+
+    <div class="hero__content container">
+      <p class="label label--light">01 — Nutrition Lab · с 2019</p>
+      <h1 class="display display--xl">Создано<br>природой</h1>
+      <p class="hero__lede">Витамины чистого состава: биодоступные формы, без красителей и лишних наполнителей.</p>
+      <a class="btn btn--light" href="#catalog">В каталог</a>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="label label--light">Листайте</span>
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 02 · SPLIT CATEGORIES ═══════════════ -->
+  <section class="split" aria-label="Ключевые категории">
+
+    <article class="split__panel">
+      <div class="media split__media" data-slot="категория 1 — 4:5" style="--ar:4/5"></div>
+      <div class="split__body">
+        <p class="badge">Веган</p>
+        <p class="badge badge--outline">Премиум-качество</p>
+        <h2 class="display display--l">Капсулы</h2>
+        <ul class="ticks">
+          <li>Биодоступные хелатные формы</li>
+          <li>Лабораторный контроль партий</li>
+          <li>Растительная оболочка</li>
+          <li>Произведено в Европе</li>
+        </ul>
+        <a class="link-cta" href="#catalog">Подробнее</a>
+      </div>
+    </article>
+
+    <article class="split__panel split__panel--dark surface-dark">
+      <div class="media split__media" data-slot="категория 2 — 4:5" style="--ar:4/5"></div>
+      <div class="split__body">
+        <p class="badge badge--light">Новое</p>
+        <p class="label label--light">Оптимально для&nbsp;— <span class="ticker" id="ticker" aria-live="off">иммунитета</span></p>
+        <h2 class="display display--l">Липосомы</h2>
+        <ul class="ticks ticks--light">
+          <li>Усвоение до 5 раз выше</li>
+          <li>Нейтральный вкус</li>
+          <li>Без сахара и подсластителей</li>
+          <li>Формула для ежедневного приёма</li>
+        </ul>
+        <a class="link-cta link-cta--light" href="#catalog">Подробнее</a>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ═══════════════ 03 · STATEMENT ═══════════════ -->
+  <section class="statement container">
+    <h2 class="display display--xl">Больше энергии.<br>Каждый день.</h2>
+    <div class="statement__aside">
+      <p class="prose">Врачи, аптеки и профессиональные спортсмены уже выбирают наши формулы. Мы делаем небольшие партии — и проверяем каждую.</p>
+      <a class="link-cta" href="#catalog">Узнать больше о линейке</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 04 · FEATURED ═══════════════ -->
+  <section class="featured container" id="catalog">
+    <header class="section-head">
+      <h2 class="display display--m">Бестселлеры</h2>
+      <p class="label">02 — Каталог</p>
+    </header>
+
+    <div class="cards cards--3">
+
+      <article class="card">
+        <div class="media card__media" data-slot="продукт 1 — 1:1" style="--ar:1/1"></div>
+        <h3 class="card__title">D3 + K2 <span>капли, 30 мл</span></h3>
+        <p class="card__price">2 450 ₽</p>
+        <button class="btn btn--dark btn--sm js-add" type="button">В корзину</button>
+      </article>
+
+      <article class="card">
+        <div class="media card__media" data-slot="продукт 2 — 1:1" style="--ar:1/1"></div>
+        <h3 class="card__title">Магний бисглицинат <span>120 капсул</span></h3>
+        <p class="card__price">1 890 ₽</p>
+        <button class="btn btn--dark btn--sm js-add" type="button">В корзину</button>
+      </article>
+
+      <article class="card">
+        <div class="media card__media" data-slot="продукт 3 — 1:1" style="--ar:1/1"></div>
+        <h3 class="card__title">Омега-3 <span>ультра, 90 капсул</span></h3>
+        <p class="card__price">2 990 ₽</p>
+        <button class="btn btn--dark btn--sm js-add" type="button">В корзину</button>
+      </article>
+
+    </div>
+
+    <a class="link-cta link-cta--xl" href="#accordion">Весь каталог</a>
+  </section>
+
+  <!-- ═══════════════ 05 · BRAND STORY ═══════════════ -->
+  <section class="story container" id="about">
+
+    <div class="story__text">
+      <p class="label">03 — О бренде</p>
+      <p class="prose prose--lead">Мы начинали как небольшая лаборатория и до сих пор производим малыми партиями — не массой. Каждое сырьё приходит с сертификатом, каждая партия уходит в независимую проверку.</p>
+      <p class="prose">Лучшее качество берётся не откуда-то, а из конкретного места: собственное производство полного цикла, ручная сборка и точные технологии. Мы знаем путь каждой капсулы.</p>
+      <a class="link-cta" href="#journal">Больше о нас</a>
+    </div>
+
+    <div class="story__media">
+      <div class="media" data-slot="о бренде — 3:4" style="--ar:3/4"></div>
+      <div class="media story__media--offset" data-slot="деталь — 1:1" style="--ar:1/1"></div>
+    </div>
+
+    <dl class="stats">
+      <div><dt class="label">Партий проверено</dt><dd class="display display--s" data-count="1240">0</dd></div>
+      <div><dt class="label">Активных формул</dt><dd class="display display--s" data-count="26">0</dd></div>
+      <div><dt class="label">Аптек-партнёров</dt><dd class="display display--s" data-count="310">0</dd></div>
+    </dl>
+
+  </section>
+
+  <!-- ═══════════════ 06 · ACCORDION (DARK) ═══════════════ -->
+  <section class="accordion surface-dark" id="accordion">
+    <div class="container">
+
+      <div class="acc-item is-open">
+        <h2>
+          <button class="acc-trigger" type="button" aria-expanded="true">
+            <span class="display display--l">Иммунитет</span>
+            <span class="acc-count">(6)</span>
+            <span class="acc-icon" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="acc-panel">
+          <div class="acc-panel__inner">
+            <p class="prose prose--light">Базовая поддержка в сезон и в перелётах. Витамин D, цинк и липосомальный C — формы, которые организм действительно усваивает.</p>
+            <div class="cards cards--3">
+              <article class="card card--dark">
+                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <h3 class="card__title">Витамин C липосомальный <span>60 капсул</span></h3>
+                <p class="card__price">2 190 ₽</p>
+              </article>
+              <article class="card card--dark">
+                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <h3 class="card__title">Цинк пиколинат <span>90 капсул</span></h3>
+                <p class="card__price">1 290 ₽</p>
+              </article>
+              <article class="card card--dark">
+                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <h3 class="card__title">D3 + K2 <span>капли, 30 мл</span></h3>
+                <p class="card__price">2 450 ₽</p>
+              </article>
+            </div>
+            <a class="link-cta link-cta--light" href="#catalog">Больше продуктов</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <h2>
+          <button class="acc-trigger" type="button" aria-expanded="false">
+            <span class="display display--l">Энергия и фокус</span>
+            <span class="acc-count">(8)</span>
+            <span class="acc-icon" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="acc-panel">
+          <div class="acc-panel__inner">
+            <p class="prose prose--light">Без стимуляторов и резких подъёмов. Витамины группы B, железо и адаптогены работают на ровный уровень энергии в течение дня.</p>
+            <div class="cards cards--3">
+              <article class="card card--dark">
+                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <h3 class="card__title">B-комплекс <span>активные формы, 60 капсул</span></h3>
+                <p class="card__price">1 950 ₽</p>
+              </article>
+              <article class="card card--dark">
+                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <h3 class="card__title">Железо + C <span>90 капсул</span></h3>
+                <p class="card__price">1 490 ₽</p>
+              </article>
+              <article class="card card--dark">
+                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <h3 class="card__title">Коэнзим Q10 <span>60 капсул</span></h3>
+                <p class="card__price">3 250 ₽</p>
+              </article>
+            </div>
+            <a class="link-cta link-cta--light" href="#catalog">Больше продуктов</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <h2>
+          <button class="acc-trigger" type="button" aria-expanded="false">
+            <span class="display display--l">Сон и спокойствие</span>
+            <span class="acc-count">(5)</span>
+            <span class="acc-icon" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="acc-panel">
+          <div class="acc-panel__inner">
+            <p class="prose prose--light">Вечерний ритуал вместо снотворного. Магний в хелатной форме, L-теанин и глицин — мягко, без утренней тяжести.</p>
+            <div class="cards cards--3">
+              <article class="card card--dark">
+                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <h3 class="card__title">Магний бисглицинат <span>120 капсул</span></h3>
+                <p class="card__price">1 890 ₽</p>
+              </article>
+              <article class="card card--dark">
+                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <h3 class="card__title">L-теанин <span>60 капсул</span></h3>
+                <p class="card__price">1 690 ₽</p>
+              </article>
+              <article class="card card--dark">
+                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <h3 class="card__title">Ночная формула <span>30 саше</span></h3>
+                <p class="card__price">2 390 ₽</p>
+              </article>
+            </div>
+            <a class="link-cta link-cta--light" href="#catalog">Больше продуктов</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <h2>
+          <button class="acc-trigger" type="button" aria-expanded="false">
+            <span class="display display--l">Красота и кожа</span>
+            <span class="acc-count">(7)</span>
+            <span class="acc-icon" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="acc-panel">
+          <div class="acc-panel__inner">
+            <p class="prose prose--light">Коллаген, биотин и омега-кислоты. Результат виден не за неделю, а за курс — и мы честно об этом пишем на упаковке.</p>
+            <div class="cards cards--3">
+              <article class="card card--dark">
+                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <h3 class="card__title">Коллаген пептидный <span>порошок, 300 г</span></h3>
+                <p class="card__price">3 690 ₽</p>
+              </article>
+              <article class="card card--dark">
+                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <h3 class="card__title">Биотин + селен <span>90 капсул</span></h3>
+                <p class="card__price">1 390 ₽</p>
+              </article>
+              <article class="card card--dark">
+                <div class="media card__media" data-slot="продукт — 1:1" style="--ar:1/1"></div>
+                <h3 class="card__title">Омега-3 <span>ультра, 90 капсул</span></h3>
+                <p class="card__price">2 990 ₽</p>
+              </article>
+            </div>
+            <a class="link-cta link-cta--light" href="#catalog">Больше продуктов</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════ 07 · FULL-BLEED BANNER ═══════════════ -->
+  <section class="banner surface-dark" aria-label="Новинка — саше">
+    <div class="media banner__media" data-slot="баннер — широкое фото или видео 21:9" style="--ar:21/9"></div>
+    <div class="banner__content container">
+      <p class="label label--light">Новинка</p>
+      <h2 class="display display--m">Саше ELEMENTA</h2>
+      <p class="banner__lede">Дневная доза в одном пакетике — для поездок и офиса.</p>
+      <a class="btn btn--light" href="#catalog">Купить саше</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 08 · FORMULAS ═══════════════ -->
+  <section class="formulas surface-dark" id="formulas">
+    <div class="container">
+
+      <header class="section-head section-head--stack">
+        <h2 class="display display--l">Формулы <span class="acc-count">(3)</span></h2>
+        <p class="prose prose--light formulas__lede">Поставьте цель — остальное соберём мы. Формула это готовая связка продуктов ELEMENTA с расписанием приёма.</p>
+      </header>
+
+      <div class="cards cards--3 formulas__grid">
+
+        <article class="formula">
+          <h3 class="formula__title">Больше энергии</h3>
+          <ul class="dots">
+            <li>Ровный уровень в течение дня</li>
+            <li>Без стимуляторов</li>
+            <li>Поддержка железа и B12</li>
+          </ul>
+          <p class="prose prose--light">Наша формула для нагрузок и длинных дней. Постепенное высвобождение, хорошая переносимость, никакого отката к вечеру.</p>
+          <a class="link-cta link-cta--light" href="#catalog">Собрать формулу</a>
+        </article>
+
+        <article class="formula">
+          <h3 class="formula__title">Глубокий сон</h3>
+          <ul class="dots">
+            <li>Быстрое засыпание</li>
+            <li>Меньше ночных пробуждений</li>
+            <li>Лёгкое утро</li>
+          </ul>
+          <p class="prose prose--light">Вечерняя связка магния, глицина и L-теанина. Работает как ритуал: одно и то же время, один и тот же состав, предсказуемый результат.</p>
+          <a class="link-cta link-cta--light" href="#catalog">Собрать формулу</a>
+        </article>
+
+        <article class="formula">
+          <h3 class="formula__title">Защита иммунитета</h3>
+          <ul class="dots">
+            <li>Сезонная поддержка</li>
+            <li>Витамин D под контролем</li>
+            <li>Цинк в биодоступной форме</li>
+          </ul>
+          <p class="prose prose--light">Базовый набор на осень и зиму. Дозировки подобраны так, чтобы курс можно было держать месяцами без перерывов.</p>
+          <a class="link-cta link-cta--light" href="#catalog">Собрать формулу</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 09 · JOURNAL ═══════════════ -->
+  <section class="journal container" id="journal">
+
+    <header class="section-head section-head--stack">
+      <h2 class="display display--l">Журнал</h2>
+      <p class="prose journal__lede">Витамины — это не только состав на этикетке. Это ещё и материал, из которого получаются хорошие истории.</p>
+    </header>
+
+    <div class="cards cards--3">
+
+      <article class="post">
+        <div class="media post__media" data-slot="статья 1 — 3:2" style="--ar:3/2"></div>
+        <p class="label"><time datetime="2026-05-14">14 / 05 / 26</time></p>
+        <h3 class="post__title">Липосомальные формы: маркетинг или химия?</h3>
+        <p class="prose prose--sm">Разбираем, что происходит с молекулой в липидной оболочке и почему усвоение действительно меняется. Спойлер: не для всех витаминов.</p>
+        <a class="link-cta link-cta--sm" href="#journal">Читать</a>
+      </article>
+
+      <article class="post">
+        <div class="media post__media" data-slot="статья 2 — 3:2" style="--ar:3/2"></div>
+        <p class="label"><time datetime="2026-03-02">02 / 03 / 26</time></p>
+        <h3 class="post__title">Витамин D зимой: сколько на самом деле нужно</h3>
+        <p class="prose prose--sm">Норма из инструкции и норма по анализам — не одно и то же. Что стоит сдать перед курсом и как читать результат.</p>
+        <a class="link-cta link-cta--sm" href="#journal">Читать</a>
+      </article>
+
+      <article class="post">
+        <div class="media post__media" data-slot="статья 3 — 3:2" style="--ar:3/2"></div>
+        <p class="label"><time datetime="2025-11-21">21 / 11 / 25</time></p>
+        <h3 class="post__title">Как мы проверяем каждую партию</h3>
+        <p class="prose prose--sm">Путь от мешка сырья до готовой банки: входной контроль, независимая лаборатория и почему мы храним образцы два года.</p>
+        <a class="link-cta link-cta--sm" href="#journal">Читать</a>
+      </article>
+
+    </div>
+
+    <a class="link-cta link-cta--xl" href="#journal">Все статьи</a>
+  </section>
+
+  <!-- ═══════════════ 10 · NEWSLETTER ═══════════════ -->
+  <section class="newsletter surface-dark" id="newsletter">
+    <div class="container newsletter__inner">
+      <h2 class="display display--l">Подпишитесь<br>на рассылку</h2>
+
+      <form class="subscribe" id="subscribeForm" novalidate>
+        <label class="label label--light" for="email">E-mail — пришлём промокод на первый заказ</label>
+        <div class="subscribe__row">
+          <input class="subscribe__input" type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+          <button class="btn btn--light" type="submit">Подписаться</button>
+        </div>
+        <p class="subscribe__msg" id="subscribeMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="site-footer surface-dark">
+  <div class="container">
+
+    <div class="site-footer__top">
+      <a class="logo logo--footer" href="#top">ELEMENTA</a>
+      <p class="prose prose--light site-footer__claim">Витамины и нутрицевтики чистого состава.<br>Производство полного цикла.</p>
+    </div>
+
+    <div class="site-footer__cols">
+      <nav aria-label="Каталог">
+        <p class="label label--light">Каталог</p>
+        <a href="#catalog">Иммунитет</a>
+        <a href="#catalog">Энергия и фокус</a>
+        <a href="#catalog">Сон и спокойствие</a>
+        <a href="#catalog">Красота и кожа</a>
+      </nav>
+      <nav aria-label="Компания">
+        <p class="label label--light">Компания</p>
+        <a href="#about">О бренде</a>
+        <a href="#formulas">Формулы</a>
+        <a href="#journal">Журнал</a>
+        <a href="#newsletter">Контакты</a>
+      </nav>
+      <nav aria-label="Соцсети">
+        <p class="label label--light">Соцсети</p>
+        <a href="#top">Instagram</a>
+        <a href="#top">Telegram</a>
+        <a href="#top">YouTube</a>
+      </nav>
+      <div>
+        <p class="label label--light">Документы</p>
+        <a href="#top">Оферта</a>
+        <a href="#top">Политика конфиденциальности</a>
+        <a href="#top">Доставка и возврат</a>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p class="label label--light">© 2026 ELEMENTA — вымышленный бренд, концепт для портфолио</p>
+      <p class="label label--light">БАД. Не является лекарственным средством</p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
